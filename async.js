@@ -127,6 +127,7 @@ const app=express();
 // .then(data=>console.log(data))
 // .catch(err=>console.log(err));
 
+//async and await
 async function getUsers() {
   try {
    const response = await fetch('https://jsonplaceholder.typicode.com/users');
