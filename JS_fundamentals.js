@@ -195,4 +195,30 @@ Promise.all([promise1,promise2,promise3]).then(([users,posts,comments])=>{
 // const [user,posts,comments]=await Promise.all([
 // ])
 
-fetch('/api/user').then(response=>response.json()).then(user=>console.log(user));
+// fetch('/api/user').then(response=>response.json()).then(user=>console.log(user));
+
+// async function fetchData(){
+//   const response=await fetch('/api/user');
+//   const data=await response.json()
+//   console.log(data);
+// }
+
+// async function test() {
+//   return 42;
+// }
+
+// test().then((value)=>console.log(value));
+
+//catch block
+// fetch('/api/user').then((response)=>response.json())
+// .then((data)=>console.log(data)).catch(err=>console.log(err));
+
+// fetch('/api/user').then(user=>console.log(user))
+// .then(err=>console.log(err));
+
+// let loading=true;
+// fetch('/api/user').then((response)=>response.json()).then((data)=>console.log(data)).catch((err)=>{
+// console.log(err);
+// loading=false}).finally(()=>console.log("Request complete"))
+
+
